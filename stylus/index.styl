@@ -1,0 +1,464 @@
+@-webkit-keyframes hover
+	to
+		background-color #0096bb
+@-webkit-keyframes sliderText
+	from
+		top -40px
+		opacity 0
+	to
+		top 0
+		opacity 1
+
+.programVideo
+	// background-color red
+	position fixed
+	right 0
+	bottom 0
+	width 100%
+	// height 100%
+	z-index -10	
+		
+.w1224
+	width 1224px
+	height 100%
+	margin 0 auto
+	padding 0 12px
+.header
+	width 100%
+	height 500px
+	// background-color #111
+	position relative
+	.slider-bg
+		width 100%
+		height 500px
+		position absolute
+		top 0
+		left 0
+		.bgs
+			width 100%
+			height 500px
+			background-repeat no-repeat
+			background-position center
+			display none
+			&.show
+				display block
+			&.bg-1
+				background-image url(../img/bg-1.png)
+				background-color rgb(4, 16, 31)
+			&.bg-2
+				background-image url(../img/bg-2.jpg)
+				background-color rgb(40, 0, 97)
+			&.bg-3
+				background-image url(../img/bg-3.png)
+				background-color rgb(33, 46, 72)
+			&.bg-4
+				background-image url(../img/bg-4.jpg)
+				background-color rgb(14, 29, 58)
+			&.bg-5
+				background-color rgba(30,85,101,.65)
+			
+	.slider-box
+		width 100%
+		height 500px
+		position absolute
+		top 0
+		z-index 2
+		color #fff
+		.slider-text
+			height 100%
+			display none
+			position relative
+			animation sliderText 1s
+			&.t5
+				text-align center
+			&.show
+				display block
+			.slider-title
+				font-size 48px
+				font-weight 100
+				margin-top 142px
+				margin-bottom 15px
+				line-height 72px
+			.inslider-text
+				font-size 20px
+				font-weight 100
+				line-height 1.5
+				margin-bottom 57px
+			.slider-btn-more
+				display inline-block
+				width 180px
+				height 42px
+				font-size 16px
+				border 1px solid #fff
+				line-height 40px
+				text-align center
+				// margin-top 20px
+				&.btn-free
+					background-color #00A2CA
+					border-color #00A2CA
+
+				
+				
+	.w1224
+		// background-color red
+		position relative
+		.top-nav
+			width 100%
+			height 90px
+			overflow hidden
+			position relative
+			z-index 3
+			.logo-box
+				float left
+				margin-top 32px
+				margin-right 72px
+				.logo-aliyun
+					float left
+					width 94px
+					height 31px
+					background-image url(../img/aliyun.png)
+				.logo-shujia
+					float left
+					width 49px
+					height 19px
+					background-image url(../img/shujia.png)
+					margin-top 5px
+					margin-left 5px
+			.nav-li
+				display block
+				padding 0 18px
+				color #fff
+				text-align center
+				line-height 90px
+				&.left
+					float left
+					font-size 16px
+					&:hover
+						// background-color #0096bb
+						animation hover 1s
+						-webkit-animation-fill-mode forwards
+				&.right
+					float right
+					font-size 14px
+		.dropdown-box
+			width 928px
+			height 0
+			overflow hidden
+			position absolute
+			top 90px
+			left 232px
+			.dropDown
+				background-color #fff			
+				display none
+				// padding 20px 20px 0
+				&.d1
+					height 202px
+				&.d2
+					height 300px
+				&.d3
+					height 232px
+				&.d4
+					height 232px
+				&.d5
+					height 232px
+				&.show
+					display block
+				.list-type1
+					width 368px
+					// height 54px
+					// background-color red
+					// border 1px solid red
+					float left
+					margin 20px 20px 0 20px
+					.link-title
+						display block
+						font-size 14px
+						line-height 18px
+						color #333
+					.desc
+						font-size 12px
+						line-height 15px
+						color #8E8E8E
+		.slider-btn
+			width 100%
+			position absolute
+			bottom 40px
+			left 0
+			z-index 3
+			text-align center
+			.emBtns
+				display inline-block
+				cursor pointer
+				width 16px
+				height 16px
+				border-radius 50%
+				background-color rgba(255,255,255,.5)
+				margin 0 3px
+				&.active
+					background-color #fff
+			
+.help
+	width 100%
+	height 700px
+	background-color #fff
+	overflow hidden
+	.help-title
+		width 100%
+		margin-top 55px
+		margin-bottom 40px
+		color #000
+		font-size 36px
+		text-align center
+		line-height 54px
+	.in-help
+		width 50%
+		height 100%
+		float left
+		.in-help-title
+			width 100%
+			text-align center
+			line-height 36px
+			color #000
+			font-size 24px
+			margin-bottom 10px
+		.in-help-text
+			width 100%
+			text-align center
+			color #666
+			line-height 32px
+			font-size 16px
+		.in-help-link
+			width 100%
+			text-align center
+			font-size 16px
+			line-height 32px
+			a
+				color #00A2CA
+		.in-help-img
+			margin 25px auto 0
+			&.left
+				width 289px
+				height 289px
+				background-image url(../img/help-1.png)
+				background-size 289px 289px
+			&.right
+				width 297px
+				height 302px
+				background-image url(../img/help-2.png)
+				background-size 297px 302px
+				
+.w1224
+	// margin-top 60px
+	position relative
+	z-index 3
+	.this-title
+		text-align center
+		line-height 54px
+		color #fff
+		font-size 36px
+		margin-bottom 65px
+		&.visual
+			color #000
+	.case-box
+		width 33%
+		height 167px
+		padding 0 32px 0 12px
+		color #fff
+		float left
+		&.visuals
+			color #000
+		.case-title
+			font-size 24px
+			line-height 32px
+			i
+				float left
+				width 40px
+				height 40px
+				background-color red
+				position relative
+				top -3px
+				margin-right 20px
+		.case-text
+			font-size 16px
+			line-height 32px
+			margin-top 10px
+			&.gary
+				color #666
+		.btn-more
+			display block
+			text-align center
+			color #fff
+			line-height 36px
+			font-size 14px
+			width 140px
+			height 36px
+			background-color #00A2CA
+			margin-top 25px
+				
+.dataProgram
+	width 100%
+	height 566px
+	background-color rgba(30,85,101,.65)
+	overflow hidden
+	padding-top 60px
+	position relative
+	z-index 2
+		
+.dataVisual
+	width 100%
+	height 580px
+	overflow hidden
+	background-image url(../img/datav_bg.png)
+	background-repeat norepeat
+	background-position 50% 0
+	padding-top 90px
+	
+	
+.dataMarket
+	width 100%
+	height 524px
+	background-color rgba(30,85,101,.65)
+	overflow hidden
+	position relative
+	z-index 2
+	.w1224
+		margin-top 60px
+		.program-title
+			text-align center
+			line-height 54px
+			color #fff
+			font-size 36px
+		.program-text
+			margin-top 20px
+			text-align center
+			line-height 32px
+			font-size 18px
+			color #fff
+		.program-icon
+			margin-top 20px
+			overflow hidden
+			.icon-box
+				display block
+				float left
+				padding 40px 0px
+				width 160px
+				height 160px
+				margin-right 40px
+				background-color rgba(255,255,255,.1)
+				&:hover
+					background-color rgba(255,255,255,.3)
+				.in-icon
+					width 48px
+					height 48px
+					margin 0 auto
+					&.icon1
+						background-image url(../img/icon-1.png)
+						background-size 48px 48px
+					&.icon2
+						background-image url(../img/icon-2.png)
+						background-size 48px 48px
+					&.icon3
+						background-image url(../img/icon-3.png)
+						background-size 48px 48px
+					&.icon4
+						background-image url(../img/icon-4.png)
+						background-size 48px 48px
+					&.icon5
+						background-image url(../img/icon-5.png)
+						background-size 48px 48px
+					&.icon6
+						background-image url(../img/icon-6.png)
+						background-size 48px 48px
+				.in-text
+					margin 15px auto 0
+					font-size 14px
+					color #fff
+					line-height 21px
+					text-align center
+					
+		.btn-box
+			height 86px
+			overflow hidden
+			.btn-market
+				display block
+				width 140px
+				height 39px
+				background-color #33b5d5
+				margin 50px auto 0
+				text-align center
+				color #fff
+				font-size 14px
+				line-height 39px
+.partner
+	width 100%
+	height 396px
+	background-color #fff
+	overflow hidden
+	padding-top 70px
+	border-bottom 1px solid #e5e5e5
+	.partner-title
+		text-align center
+		line-height 54px
+		color #000
+		font-size 36px
+		margin-bottom 20px
+	.partner-text
+		color #333
+		font-size 18px
+		line-height 24px
+		text-align center
+		margin-bottom 20px
+	.btn-join
+		display block
+		width 180px
+		height 42px
+		background-color #00A2CC
+		margin 40px auto 0
+		text-align center
+		line-height 42px
+		color #fff
+		font-size 16px
+	
+	
+.footer
+	width 100%
+	height 205px
+	background-color #fff
+	color #999
+	font-size 12px
+	padding-top 35px
+	overflow hidden
+	text-align center
+	.text1
+		font-size 14px
+		color #666
+		line-height 31px
+		padding 5px 0
+		a
+			padding 0 5px
+	.text2
+		line-height 24px
+		padding 5px 0
+		a
+			padding 0 6px
+	.text3
+		line-height 28px
+		padding 5px 0
+	.text4
+		padding 5px 0
+		a
+			display inline-block
+			width 22px
+			height 22px
+			background-image url(../img/footer-icon.png)
+			background-repeat norepeat
+			&.foot-icon1
+				background-position 85px 113px
+			&.foot-icon2
+				background-position 85px 91px
+			&.foot-icon3
+				width 20px
+				height 20px
+				background-image url(../img/pic1.gif)
+				background-repeat norepeat
+				
